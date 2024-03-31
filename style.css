@@ -292,6 +292,7 @@ form {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+  margin-top: 40px;
 }
 
 form input[type="text"],
@@ -304,6 +305,7 @@ form textarea {
   outline: 0;
   padding: 20px 15px;
   color: #ffe9ab;
+  font-size: 14px;
 }
 
 form input::placeholder,
