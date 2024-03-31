@@ -22,10 +22,10 @@ body {
   display: flex;
 }
 
-.btn-contato button {
+.btn-contato button, form .btn-enviar input {
   padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   background-color: #416551;
   border: 10;
   border-radius: 30px;
@@ -53,7 +53,7 @@ h2.titulo span {
   /* Para modificar apenas texto fim */
 }
 
-button:hover {
+button:hover, form .btn-enviar input:hover{
   box-shadow: 0px 0px 8px #ffe9ab83;
   transform: scale(1.05);
   color: #ffe8ab;
@@ -231,17 +231,17 @@ section.sobre .flex {
 
 /* Estilo do portfolio */
 
-section.portfolio{
+section.portfolio {
   padding: 80px 4%;
   box-shadow: 0 0 40px 10px #ffe9ab10;
 }
 
-section.portfolio .flex{
+section.portfolio .flex {
   justify-content: space-around;
   margin-top: 60px; /* adicionando margem entre o título e a div flex */
 }
 
-.img-port{
+.img-port {
   width: 360px;
   height: 460px;
   background-size: cover;
@@ -252,11 +252,11 @@ section.portfolio .flex{
   position: relative;
 }
 
-.img-port:hover{
+.img-port:hover {
   background-position: 100% 100%;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -264,7 +264,7 @@ section.portfolio .flex{
   height: 100%; /* ocupa toda a altura de img-port */
   background-color: #41655191;
   color: #ffe9ab;
-  border-radius: 40px;  /* arredonda igualmente */
+  border-radius: 40px; /* arredonda igualmente */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,7 +274,63 @@ section.portfolio .flex{
   transition: 0.8s;
 }
 
-.overlay:hover{
+.overlay:hover {
   opacity: 1;
   box-shadow: 0 0 20px #eed89c;
+}
+
+/* Estilo do formulário contato */
+
+section.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  background-color: #41655173;
+  border: 0;
+  border-radius: 15px;
+  outline: 0;
+  padding: 20px 15px;
+  color: #ffe9ab;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #ffe9ab50;
+}
+
+form textarea {
+  resize: none;
+  max-height: 600px;
+}
+
+form textarea::-webkit-scrollbar {
+  width: 15px;
+}
+
+form textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 25%;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
 }
