@@ -22,7 +22,8 @@ body {
   display: flex;
 }
 
-.btn-contato button, form .btn-enviar input {
+.btn-contato button,
+form .btn-enviar input {
   padding: 10px 40px;
   font-size: 16px;
   font-weight: 500;
@@ -53,10 +54,25 @@ h2.titulo span {
   /* Para modificar apenas texto fim */
 }
 
-button:hover, form .btn-enviar input:hover{
+button:hover,
+form .btn-enviar input:hover {
   box-shadow: 0px 0px 8px #ffe9ab83;
   transform: scale(1.05);
   color: #ffe8ab;
+}
+
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 22px;
+  background-color: #416551;
+  border: 10;
+  border-color: #ffe8ab;
+  cursor: pointer;
+  color: #ffe9ab83;
+  margin: 0 5px;
+  transition: 0.2s;
 }
 
 /* Estilo do cabeçalho */
@@ -215,20 +231,6 @@ section.sobre .flex {
   text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 22px;
-  background-color: #416551;
-  border: 10;
-  border-color: #ffe8ab;
-  cursor: pointer;
-  color: #ffe9ab83;
-  margin: 0 5px;
-  transition: 0.2s;
-}
-
 /* Estilo do portfolio */
 
 section.portfolio {
@@ -336,3 +338,34 @@ form .btn-enviar {
   margin-top: 20px;
   text-align: center;
 }
+
+/* Estilo do rodapé */
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffe9ab10;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .line-footer{
+  padding: 20px 0;
+}
+
+.borda{
+  border-top: 2px solid #eed89c;
+}
+
+footer .line-footer p i {
+  color: #416551;
+  font-size: 22px;
+}
+
+footer .line-footer p a {
+  color: #eed89c;
+  text-decoration: none;
+}
+
+
